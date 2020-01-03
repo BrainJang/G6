@@ -3,3 +3,4 @@ declare module '*.json' {
 }
 
 declare module 'numericjs';
+
