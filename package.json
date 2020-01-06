@@ -50,7 +50,7 @@
     "site:develop": "GATSBY=true gatsby develop --open",
     "start": "npm run site:develop",
     "test": "jest",
-    "test-live": "DEBUG_MODE=1 jest --watch  ./tests/unit/plugins/menu-spec.ts",
+    "test-live": "DEBUG_MODE=1 jest --watch  ./tests/unit/layout/force-web-worker-spec.ts",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
     "watch": "father build -w"
   },
@@ -81,7 +81,8 @@
     "d3-force": "^2.0.1",
     "dagre": "^0.8.5",
     "numericjs": "^1.2.6",
-    "tslib": "^1.10.0"
+    "tslib": "^1.10.0",
+    "webpack": "^4.41.4"
   },
   "devDependencies": {
     "@antv/gatsby-theme-antv": "^0.9.25",
@@ -119,7 +120,7 @@
     "typedoc-plugin-markdown": "^2.2.11",
     "typescript": "^3.5.3",
     "typescript-transform-paths": "^1.1.14",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "worker-loader": "^2.0.0"
   }
 }
